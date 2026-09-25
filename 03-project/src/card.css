@@ -1,0 +1,127 @@
+/* Card Container */
+.cards-wrapper{
+  display: grid;
+  /* FIXED: Removed space after repeat & matched the column width with card size (330px) */
+  grid-template-columns: repeat(3, 330px);
+  grid-template-rows: repeat(3, auto); 
+  gap: 30px; 
+  /* Center the whole 3x3 grid on your page */
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.my-card {
+  border-color: #ffffff;
+
+  width: 330px;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* FIXED: Correct syntax for a sharp 80/20 color split */
+  background: linear-gradient(to bottom, #87ceeb 77%, #ffffff 77%);
+  
+  margin: 40px;
+}
+
+/* Header Layout */
+.header {
+  display: flex;
+  flex-direction: column; /* FIXED: Places subtitle UNDER the header text */
+  gap: 8px; /* Adds a clean gap between title and subtitle */
+  margin-bottom: 24px;
+}
+
+.Header-text {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #333333; /* Slightly dimmed for better visual hierarchy */
+}
+.lower-subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #333333; 
+  margin-bottom: 0%;
+}
+.properties{
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.land-page{
+  background-color:lch(73.85% 36.88 239.62);
+  padding: 5px;
+  width: 70px;
+  border-radius: 50px;
+  cursor: pointer;
+  color:black;
+  transition: all 0.3s ease;
+  border-color: transparent;
+}
+.site{
+  background-color:lch(73.85% 36.88 239.62);
+  padding: 5px;
+  width: 70px;
+  border-radius: 50px;
+  cursor: pointer;
+  color:black;
+  transition: all 0.3s ease;
+  border-color: transparent;
+}
+.onpage{
+  background-color:lch(73.85% 36.88 239.62);
+  padding: 5px;
+  width: 70px;
+  border-radius: 50px;
+  cursor: pointer;
+  color:black;
+  transition: all 0.3s ease;
+  border-color: transparent;
+}
+/* Footer Layout */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explore-btn {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Apply Now Button Styling */
+.apply-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.apply-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
